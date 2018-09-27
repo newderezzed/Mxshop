@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7cd429-ce9b-414a-ac62-a1a9b09b382c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/goods/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MXshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MXshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/goods/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
     </list>
@@ -59,7 +58,8 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,7 +73,7 @@
           <entry key="goods_goodscategory" value="4" />
           <entry key="json" value="1" />
           <entry key="name" value="1" />
-          <entry key="py" value="102" />
+          <entry key="py" value="108" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
@@ -82,13 +82,13 @@
           <entry key="Database Element" value="5" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="102" />
+          <entry key="Python" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="py" value="2235" />
+          <entry key="py" value="2375" />
           <entry key="py@MXshop" value="29" />
         </counts>
       </usages-collector>
@@ -96,7 +96,7 @@
         <counts>
           <entry key="CommandLine" value="5" />
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="2235" />
+          <entry key="Python" value="2375" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -104,26 +104,26 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MXshop/urls.py">
+        <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="133">
+              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/goods/adminx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+            <state relative-caret-position="293">
+              <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <marker date="1538030803000" expanded="true" signature="526:657" ph="..." />
-                <marker date="1538030803000" expanded="true" signature="958:965" ph="..." />
-                <marker date="1538030803000" expanded="true" signature="1127:1132" ph="..." />
+                <element signature="e#19#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,37 +132,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/goods/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="340">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <marker date="1538030647000" expanded="true" signature="357:433" ph="..." />
-                <marker date="1538030647000" expanded="true" signature="520:526" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/goods/filters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-                <marker date="1538031244000" expanded="true" signature="109:114" ph="..." />
+                <marker date="1538031911000" expanded="true" signature="358:919" ph="..." />
+                <marker date="1538031911000" expanded="true" signature="1006:1012" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+        <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="67" column="14" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="14" />
+            <state relative-caret-position="478">
+              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
+                <marker date="1538032079000" expanded="true" signature="559:690" ph="..." />
+                <marker date="1538032079000" expanded="true" signature="991:998" ph="..." />
+                <marker date="1538032079000" expanded="true" signature="1160:1165" ph="..." />
+                <marker date="1538032079000" expanded="true" signature="1784:1789" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/goods/filters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+                <marker date="1538033514000" expanded="true" signature="109:114" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MXshop/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#665#678#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,6 +197,7 @@
     <findStrings>
       <find>GoodsCategoryBrand</find>
       <find>name</find>
+      <find>sub_cat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -219,9 +236,9 @@
         <option value="$PROJECT_DIR$/db_tools/import_goods_data.py" />
         <option value="$PROJECT_DIR$/apps/goods/view_base.py" />
         <option value="$PROJECT_DIR$/MXshop/settings.py" />
-        <option value="$PROJECT_DIR$/MXshop/urls.py" />
         <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
         <option value="$PROJECT_DIR$/apps/goods/views.py" />
+        <option value="$PROJECT_DIR$/MXshop/urls.py" />
         <option value="$PROJECT_DIR$/apps/goods/filters.py" />
       </list>
     </option>
@@ -233,9 +250,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="755" />
+    <option name="x" value="695" />
     <option name="y" value="23" />
-    <option name="width" value="1165" />
+    <option name="width" value="1225" />
     <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -244,7 +261,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,10 +273,22 @@
               <item name="MXshop" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MXshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MXshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
+              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,20 +417,29 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="755" y="23" width="1165" height="977" extended-state="0" />
+    <frame x="695" y="23" width="1225" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20076849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20371936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39327148" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38283062" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32946634" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.3298611" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -477,16 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-          <folding>
-            <element signature="e#19#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,10 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <marker date="1537955109000" expanded="true" signature="96:101" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,44 +755,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MXshop/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/goods/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="340">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <marker date="1538030647000" expanded="true" signature="357:433" ph="..." />
-            <marker date="1538030647000" expanded="true" signature="520:526" ph="..." />
+            <marker date="1538031911000" expanded="true" signature="358:919" ph="..." />
+            <marker date="1538031911000" expanded="true" signature="1006:1012" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        <state relative-caret-position="478">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-            <marker date="1538030803000" expanded="true" signature="526:657" ph="..." />
-            <marker date="1538030803000" expanded="true" signature="958:965" ph="..." />
-            <marker date="1538030803000" expanded="true" signature="1127:1132" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1538032079000" expanded="true" signature="559:690" ph="..." />
+            <marker date="1538032079000" expanded="true" signature="991:998" ph="..." />
+            <marker date="1538032079000" expanded="true" signature="1160:1165" ph="..." />
+            <marker date="1538032079000" expanded="true" signature="1784:1789" ph="..." />
           </folding>
         </state>
       </provider>
@@ -780,7 +787,37 @@
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1538031244000" expanded="true" signature="109:114" ph="..." />
+            <marker date="1538033514000" expanded="true" signature="109:114" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MXshop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#665#678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+          <folding>
+            <element signature="e#19#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
