@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'trade',
     'crispy_forms',
     'user_operation',
-    'DjangoUeditor'
+    'DjangoUeditor',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
@@ -150,3 +151,9 @@ MEDIA_URL="/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
+REST_FRAMEWORK = {
+    #分页
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    #每页显示的个数
+    'PAGE_SIZE': 10,
+}
