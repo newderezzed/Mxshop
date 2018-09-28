@@ -14,14 +14,14 @@ class YunPian(object):
         parmas = {
             "apikey": self.api_key,
             "mobile": mobile,
-            "text": "【飞机生鲜超市】您的验证码是{code}。如非本人操作，请忽略本短信".format(code=code)
+            "text": "您的验证码是{code}。如非本人操作，请忽略本短信".format(code=code)
         }
-
         response = requests.post(self.single_send_url, data=parmas)
         re_dict = json.loads(response.text)
+        print(re_dict)
         return re_dict
 
 if __name__ == "__main__":
     #例如：9b11127a9701975c734b8aee81ee3526
-    yun_pian = YunPian("2e87d1xxxxxx7d4bxxxx1608f7c6da23exxxxx2")
-    yun_pian.send_sms("2018", "17612744133")
+    yun_pian = YunPian("9d74815833f3fdf2575bf6b113429b8a")
+    yun_pian.send_sms("6666", "17612744133")

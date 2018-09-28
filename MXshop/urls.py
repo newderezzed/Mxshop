@@ -19,21 +19,18 @@ from django.urls import path, include, re_path
 from django.views.static import serve
 from MXshop.settings import MEDIA_ROOT
 # from goods.view_base import GoodsListView
-from goods.views import GoodsListViewSet,CategoryViewSet
+from goods.views import GoodsListViewSet, CategoryViewSet
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 # from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
-
-
+from users.views import SmsCodeViewset
 
 router = DefaultRouter()
 
-
-
 router.register(r'goods', GoodsListViewSet, base_name='goods')
-router.register(r'categorys', CategoryViewSet, base_name="categorys")
-
+router.register(r'categorys', CategoryViewSet, base_name='categorys')
+router.register(r'code', SmsCodeViewset, base_name='code')
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
