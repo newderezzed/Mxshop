@@ -10,7 +10,6 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .filters import GoodsFilter
 from rest_framework import filters
 
-
 # Create your views here.
 
 class GoodsPagination(PageNumberPagination):
@@ -58,6 +57,5 @@ class CategoryViewSet(mixins.ListModelMixin,mixins.RetrieveModelMixin,viewsets.G
     '''
     商品分类表数据
     '''
-
     queryset = GoodsCategory.objects.filter(category_type=1)
     serializer_class = CategorySerializer

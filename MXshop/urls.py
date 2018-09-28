@@ -22,8 +22,15 @@ from MXshop.settings import MEDIA_ROOT
 from goods.views import GoodsListViewSet,CategoryViewSet
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
+# from rest_framework.authtoken import views
+from rest_framework_jwt.views import obtain_jwt_token
+
+
 
 router = DefaultRouter()
+
+
+
 router.register(r'goods', GoodsListViewSet, base_name='goods')
 router.register(r'categorys', CategoryViewSet, base_name="categorys")
 
@@ -35,5 +42,7 @@ urlpatterns = [
     # path('goods/',GoodsListView.as_view(),name='goods-list'),
     path('docs', include_docs_urls(title='仙剑奇侠传')),
     path('api-auth/', include('rest_framework.urls')),
-    path('api/', include(router.urls))
+    # path('api-token-auth/',views.obtain_auth_token),  # token
+    path('login/', obtain_jwt_token),
+    re_path('^', include(router.urls))
 ]
