@@ -174,3 +174,8 @@ JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),  # 也可以设置seconds=20
     'JWT_AUTH_HEADER_PREFIX': 'Token',  # JWT跟前端保持一致，比如“token”这里设置成JWT
 }
+
+
+
+# 手机号码正则表达式
+REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
