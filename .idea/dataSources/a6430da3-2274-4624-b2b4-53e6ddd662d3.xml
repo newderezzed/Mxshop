@@ -1169,14 +1169,13 @@ goods_id</ColNames>
       <DataType>varchar(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="260" parent="29" name="mobile">
+    <column id="260" parent="29" name="email">
       <Position>14</Position>
-      <DataType>varchar(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="261" parent="29" name="email">
-      <Position>15</Position>
       <DataType>varchar(100)|0s</DataType>
+    </column>
+    <column id="261" parent="29" name="mobile">
+      <Position>15</Position>
+      <DataType>varchar(11)|0s</DataType>
     </column>
     <index id="262" parent="29" name="sqlite_autoindex_users_userprofile_1">
       <NameSurrogate>1</NameSurrogate>
