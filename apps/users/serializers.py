@@ -51,6 +51,12 @@ class UserRegSerializer(serializers.ModelSerializer):
         style={'input_type': 'password'}, label=True, write_only=True
     )
 
+    # 密码加密保存
+    def create(self, validated_data):
+        user = super(UserRegSerializer, self).create(validated_data=validated_data)
+        user.set_password(validated_data["password"])
+        user.save()
+        return user
 
 
     #验证code

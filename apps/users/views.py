@@ -1,16 +1,17 @@
 from django.contrib.auth.backends import ModelBackend
 from django.contrib.auth import get_user_model
 from django.db.models import Q
-from rest_framework.mixins import CreateModelMixin
+from rest_framework.mixins import CreateModelMixin, UpdateModelMixin
 from rest_framework import viewsets
-from .serializers import SmsSerializer,UserRegSerializer
+from .serializers import SmsSerializer, UserRegSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from utils.yunpian import YunPian
 from MXshop.settings import APIKEY
 from random import choice
 from .models import VerifyCode
-from rest_framework_jwt.serializers import jwt_payload_handler,jwt_encode_handler
+from rest_framework_jwt.serializers import jwt_payload_handler, jwt_encode_handler
+
 # Create your views here.
 
 
@@ -58,7 +59,7 @@ class SmsCodeViewset(CreateModelMixin, viewsets.GenericViewSet):
             }, status=status.HTTP_201_CREATED)
 
 
-class UserViewset(CreateModelMixin,viewsets.GenericViewSet):
+class UserViewset(CreateModelMixin, viewsets.GenericViewSet):
     '''
     用户
     '''
