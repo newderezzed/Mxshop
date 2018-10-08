@@ -39,7 +39,7 @@ class LeavingMessageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserLeavingMessage
-        fields = ('users', 'message_type', 'subject', 'message', 'file', 'id', 'add_time')
+        fields = ('user', 'message_type', 'subject', 'message', 'file', 'id', 'add_time')
 
 
 class AddressSerializer(serializers.ModelSerializer):

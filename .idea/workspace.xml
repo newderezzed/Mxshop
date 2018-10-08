@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7cd429-ce9b-414a-ac62-a1a9b09b382c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/trade/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MXshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/trade/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trade/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user_operation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_operation/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/user_operation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_operation/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user_operation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_operation/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +66,8 @@
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.79" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.84" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,30 +81,31 @@
           <entry key="django_admin_log" value="1" />
           <entry key="django_content_type" value="1" />
           <entry key="django_migrations" value="2" />
-          <entry key="goods_goods" value="3" />
+          <entry key="goods_goods" value="4" />
           <entry key="goods_goodscategory" value="6" />
           <entry key="json" value="1" />
           <entry key="name" value="1" />
-          <entry key="py" value="207" />
+          <entry key="py" value="228" />
+          <entry key="trade_shoppingcart" value="1" />
           <entry key="txt" value="3" />
           <entry key="user_operation_userfav" value="1" />
-          <entry key="users_userprofile" value="6" />
+          <entry key="users_userprofile" value="7" />
           <entry key="users_userprofile_groups" value="1" />
           <entry key="users_verifycode" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="31" />
+          <entry key="Database Element" value="34" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="207" />
+          <entry key="Python" value="228" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="py" value="5460" />
+          <entry key="py" value="6219" />
           <entry key="py@MXshop" value="29" />
         </counts>
       </usages-collector>
@@ -110,7 +113,7 @@
         <counts>
           <entry key="CommandLine" value="5" />
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="5460" />
+          <entry key="Python" value="6219" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -122,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MXshop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="589">
+              <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
               <folding>
                 <element signature="e#665#678#0" expanded="true" />
               </folding>
@@ -131,33 +134,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/user_operation/serializers.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/trade/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="44" column="23" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="23" />
+            <state relative-caret-position="513">
+              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <marker date="1538988104000" expanded="true" signature="277:282" ph="..." />
-                <marker date="1538988104000" expanded="true" signature="784:789" ph="..." />
-                <marker date="1538988104000" expanded="true" signature="969:974" ph="..." />
-                <marker date="1538988104000" expanded="true" signature="1338:1343" ph="..." />
+                <element signature="e#0#35#0" expanded="true" />
+                <marker date="1538989905000" expanded="true" signature="458:785" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/trade/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+                <marker date="1538989723000" expanded="true" signature="200:205" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/user_operation/views.py">
+        <entry file="file://$PROJECT_DIR$/apps/trade/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1538988172000" expanded="true" signature="983:1174" ph="..." />
-                <marker date="1538988172000" expanded="true" signature="1197:1206" ph="..." />
-                <marker date="1538988172000" expanded="true" signature="1453:1458" ph="..." />
-              </folding>
+            <state relative-caret-position="19">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -187,7 +194,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/apps/trade/models.py" />
-        <option value="$PROJECT_DIR$/apps/user_operation/models.py" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/plugins/ueditor.py" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/plugins/__init__.py" />
         <option value="$PROJECT_DIR$/apps/users/xadmin.py" />
@@ -224,9 +230,12 @@
         <option value="$PROJECT_DIR$/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/apps/user_operation/serializers.py" />
         <option value="$PROJECT_DIR$/apps/user_operation/views.py" />
         <option value="$PROJECT_DIR$/MXshop/urls.py" />
+        <option value="$PROJECT_DIR$/apps/trade/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/trade/views.py" />
+        <option value="$PROJECT_DIR$/apps/user_operation/models.py" />
+        <option value="$PROJECT_DIR$/apps/user_operation/serializers.py" />
       </list>
     </option>
   </component>
@@ -236,10 +245,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="758" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="251" />
     <option name="y" value="23" />
-    <option name="width" value="1162" />
+    <option name="width" value="1669" />
     <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -247,31 +256,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MXshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MXshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MXshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="user_operation" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -433,15 +418,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="758" y="23" width="1162" height="979" extended-state="0" />
+    <frame x="251" y="23" width="1669" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19458374" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19371727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5821759" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5810185" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,14 +436,14 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="manage.py@MXshop" order="10" weight="0.3298611" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.5025329" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.4074074" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.18726115" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.20835894" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,13 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://a6430da3-2274-4624-b2b4-53e6ddd662d3/schema/main/table/users_userprofile">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/workspaces/fruit/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -566,9 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-553">
           <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,21 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="90" column="14" lean-forward="true" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1538983453000" expanded="true" signature="3090:3095" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="61" column="74" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-            <marker date="1538985147000" expanded="true" signature="3419:3425" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,46 +575,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user_operation/models.py">
+    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        <state relative-caret-position="1159">
+          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+            <marker date="1538988638000" expanded="true" signature="3419:3425" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6430da3-2274-4624-b2b4-53e6ddd662d3/schema/main/table/users_userprofile">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/user_operation/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+        <state relative-caret-position="627">
+          <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1538988172000" expanded="true" signature="983:1174" ph="..." />
-            <marker date="1538988172000" expanded="true" signature="1197:1206" ph="..." />
-            <marker date="1538988172000" expanded="true" signature="1453:1458" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MXshop/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#665#678#0" expanded="true" />
+            <marker date="1538988638000" expanded="true" signature="983:1174" ph="..." />
+            <marker date="1538988638000" expanded="true" signature="1197:1206" ph="..." />
+            <marker date="1538988638000" expanded="true" signature="1453:1458" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/user_operation/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="665">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <marker date="1538988104000" expanded="true" signature="277:282" ph="..." />
-            <marker date="1538988104000" expanded="true" signature="784:789" ph="..." />
-            <marker date="1538988104000" expanded="true" signature="969:974" ph="..." />
-            <marker date="1538988104000" expanded="true" signature="1338:1343" ph="..." />
+            <marker date="1538991402000" expanded="true" signature="277:282" ph="..." />
+            <marker date="1538991402000" expanded="true" signature="784:789" ph="..." />
+            <marker date="1538991402000" expanded="true" signature="969:974" ph="..." />
+            <marker date="1538991402000" expanded="true" signature="1342:1347" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user_operation/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MXshop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+          <folding>
+            <element signature="e#665#678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6430da3-2274-4624-b2b4-53e6ddd662d3/schema/main/table/goods_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/trade/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6430da3-2274-4624-b2b4-53e6ddd662d3/schema/main/table/trade_shoppingcart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/trade/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1538989905000" expanded="true" signature="458:785" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/trade/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1538989723000" expanded="true" signature="200:205" ph="..." />
           </folding>
         </state>
       </provider>
