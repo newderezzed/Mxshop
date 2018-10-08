@@ -36,7 +36,7 @@ class GoodsPagination(PageNumberPagination):
 #     serializer_class = GoodsSerializer
 
 
-class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     '''商品列表'''
 
     # 这里必须要定义一个默认的排序,否则会报错
@@ -59,3 +59,5 @@ class CategoryViewSet(mixins.ListModelMixin,mixins.RetrieveModelMixin,viewsets.G
     '''
     queryset = GoodsCategory.objects.filter(category_type=1)
     serializer_class = CategorySerializer
+
+

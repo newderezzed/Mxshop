@@ -1,0 +1,51 @@
+from rest_framework import serializers
+from user_operation.models import UserFav, UserLeavingMessage, UserAddress
+from rest_framework.validators import UniqueTogetherValidator
+from goods.serializers import GoodsSerializer
+
+
+class UserFavSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+
+    class Meta:
+        validators = [
+            UniqueTogetherValidator(
+                queryset=UserFav.objects.all(),
+                fields=('user', 'goods'),
+                # message的信息可以自定义
+                message="已经收藏"
+            )
+        ]
+        model = UserFav
+        # 收藏的时候需要返回商品的id，因为取消收藏的时候必须知道商品的id是多少
+        fields = ("user", "goods", 'id')
+
+
+class UserFavDetailSerializer(serializers.ModelSerializer):
+    '''用户收藏详情'''
+
+    goods = GoodsSerializer()
+
+    class Meta:
+        model = UserFav
+        fields = ('goods', 'id')
+
+
+class LeavingMessageSerializer(serializers.ModelSerializer):
+    '''用户留言'''
+
+    user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+    add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M')
+
+    class Meta:
+        model = UserLeavingMessage
+        fields = ('users', 'message_type', 'subject', 'message', 'file', 'id', 'add_time')
+
+
+class AddressSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+    add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M')
+
+    class Meta:
+        model = UserAddress
+        fields = ("id", "user", "province", "city", "district", "address", "signer_name", "add_time", "signer_mobile")

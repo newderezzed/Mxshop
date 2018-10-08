@@ -118,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -147,20 +147,9 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 REST_FRAMEWORK = {
-    #权限
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ],
-    # 分页
-    'DEFAULT_PAGINATION_CLASS': (
-        'rest_framework.pagination.PageNumberPagination',
-    ),
-    # 每页显示的个数
-    'PAGE_SIZE': 10,
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     )
 }
 
@@ -174,3 +163,12 @@ JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),  # 也可以设置seconds=20
     'JWT_AUTH_HEADER_PREFIX': 'Token',  # JWT跟前端保持一致，比如“token”这里设置成JWT
 }
+
+
+
+# 手机号码正则表达式
+REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
+
+
+#云片网APIKEY
+APIKEY = "9d74815833f3fdf2575bf6b113429b8a"
