@@ -26,7 +26,7 @@ from rest_framework.routers import DefaultRouter
 # from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
 from users.views import SmsCodeViewset, UserViewset
-from trade.views import ShoppingCartViewset
+from trade.views import ShoppingCartViewset, OrderViewset
 router = DefaultRouter()
 
 router.register(r'goods', GoodsListViewSet, base_name='goods')
@@ -37,7 +37,7 @@ router.register(r'userfavs', UserFavViewset, base_name="userfavs")
 router.register(r'message', LeavingMessageViewset, base_name='message')
 router.register(r'address', AddressViewset, base_name="address")
 router.register(r'shopcarts', ShoppingCartViewset, base_name="shopcarts")
-
+router.register(r'orders', OrderViewset, base_name="orders")
 
 
 
