@@ -84,10 +84,18 @@ WSGI_APPLICATION = 'MXshop.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # },
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '144.34.128.177',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'NAME': 'mxdb',
+        'OPTIONS':{'charset':'utf8'},
+    },
 }
 
 AUTHENTICATION_BACKENDS = (
@@ -164,11 +172,8 @@ JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'Token',  # JWT跟前端保持一致，比如“token”这里设置成JWT
 }
 
-
-
 # 手机号码正则表达式
 REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
 
-
-#云片网APIKEY
+# 云片网APIKEY
 APIKEY = "9d74815833f3fdf2575bf6b113429b8a"
