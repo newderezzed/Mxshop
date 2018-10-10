@@ -19,7 +19,7 @@ from django.urls import path, include, re_path
 from django.views.static import serve
 from MXshop.settings import MEDIA_ROOT
 # from goods.view_base import GoodsListView
-from goods.views import GoodsListViewSet, CategoryViewSet
+from goods.views import GoodsListViewSet, CategoryViewSet, BannerViewset, IndexCategoryViewset
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
@@ -38,8 +38,8 @@ router.register(r'message', LeavingMessageViewset, base_name='message')
 router.register(r'address', AddressViewset, base_name="address")
 router.register(r'shopcarts', ShoppingCartViewset, base_name="shopcarts")
 router.register(r'orders', OrderViewset, base_name="orders")
-
-
+router.register(r'banners', BannerViewset, base_name="banners")
+router.register(r'indexgoods', IndexCategoryViewset, base_name="indexgoods")
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),

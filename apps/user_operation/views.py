@@ -32,6 +32,13 @@ class UserFavViewset(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Crea
         # 只能查看当前登录用户的收藏 不会获取所有用户的收藏
         return UserFav.objects.filter(user=self.request.user)
 
+    # 用户收藏的商品数量+1
+    def perform_create(self, serializer):
+        instance = serializer.save()
+        # 这里instance相当于UserFav model，通过它找到goods
+        goods = instance.goods
+        goods.fav_num += 1
+        goods.save()
 
 class LeavingMessageViewset(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.DestroyModelMixin,
                             mixins.CreateModelMixin):
