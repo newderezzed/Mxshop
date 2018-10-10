@@ -9,7 +9,8 @@ from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from .filters import GoodsFilter
 from rest_framework import filters
-
+from rest_framework_extensions.cache.mixins import CacheResponseMixin
+from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 # Create your views here.
 
 class GoodsPagination(PageNumberPagination):
@@ -36,7 +37,7 @@ class GoodsPagination(PageNumberPagination):
 #     serializer_class = GoodsSerializer
 
 
-class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class GoodsListViewSet(CacheResponseMixin,mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     '''商品列表'''
 
     # 这里必须要定义一个默认的排序,否则会报错
@@ -44,6 +45,7 @@ class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewset
     # 分页
     pagination_class = GoodsPagination
     serializer_class = GoodsSerializer
+    throttle_classes = (UserRateThrottle, AnonRateThrottle)
     # filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
     filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
 
@@ -61,15 +63,14 @@ class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewset
         return Response(serializer.data)
 
 
-class CategoryViewSet(mixins.ListModelMixin,mixins.RetrieveModelMixin,viewsets.GenericViewSet):
+class CategoryViewSet(CacheResponseMixin,mixins.ListModelMixin,mixins.RetrieveModelMixin,viewsets.GenericViewSet):
     '''
     商品分类表数据
     '''
     queryset = GoodsCategory.objects.filter(category_type=1)
     serializer_class = CategorySerializer
 
-
-class BannerViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
+class BannerViewset(CacheResponseMixin,mixins.ListModelMixin, viewsets.GenericViewSet):
     """
     首页轮播图
     """
@@ -77,7 +78,7 @@ class BannerViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
     serializer_class = BannerSerializer
 
 
-class IndexCategoryViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
+class IndexCategoryViewset(CacheResponseMixin,mixins.ListModelMixin, viewsets.GenericViewSet):
     """
     首页商品分类数据
     """

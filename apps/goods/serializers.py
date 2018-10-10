@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Goods, GoodsCategory, GoodsImage, Banner, GoodsCategoryBrand, IndexAd
-
+from django.db.models import Q
 '''
 class GoodsSerializer(serializers.Serializer):
     name = serializers.CharField(required=True, max_length=100)
@@ -41,14 +41,14 @@ class CategorySerializer(serializers.ModelSerializer):
         model = GoodsCategory
         fields = "__all__"
 
-
-class GoodsSerializer(serializers.ModelSerializer):
-    '''商品'''
-    category = CategorySerializer()
-
-    class Meta:
-        model = Goods
-        fields = '__all__'
+#
+# class GoodsSerializer(serializers.ModelSerializer):
+#     '''商品'''
+#     category = CategorySerializer()
+#
+#     class Meta:
+#         model = Goods
+#         fields = '__all__'
 
 
 #轮播图
@@ -59,6 +59,7 @@ class GoodsImageSerializer(serializers.ModelSerializer):
 
 #商品列表页
 class GoodsSerializer(serializers.ModelSerializer):
+    '''商品'''
     #覆盖外键字段
     category = CategorySerializer()
     #images是数据库中设置的related_name="images"，把轮播图嵌套进来
