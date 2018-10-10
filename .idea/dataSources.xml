@@ -18,11 +18,11 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="vpsonline" uuid="5efcb599-8886-40ef-8364-9c1078eec38e">
+    <data-source source="LOCAL" name="mxshop@144.34.128.177" uuid="4100d28b-d772-4705-a9f0-ee0cbcb6882e">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://144.34.128.177:3306/mxdb</jdbc-url>
+      <jdbc-url>jdbc:mysql://144.34.128.177:3306/mxshop</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
