@@ -70,7 +70,7 @@ class CategoryViewSet(CacheResponseMixin,mixins.ListModelMixin,mixins.RetrieveMo
     queryset = GoodsCategory.objects.filter(category_type=1)
     serializer_class = CategorySerializer
 
-class BannerViewset(CacheResponseMixin,mixins.ListModelMixin, viewsets.GenericViewSet):
+class BannerViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
     """
     首页轮播图
     """
@@ -78,10 +78,11 @@ class BannerViewset(CacheResponseMixin,mixins.ListModelMixin, viewsets.GenericVi
     serializer_class = BannerSerializer
 
 
-class IndexCategoryViewset(CacheResponseMixin,mixins.ListModelMixin, viewsets.GenericViewSet):
+class IndexCategoryViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
     """
     首页商品分类数据
     """
     # 获取is_tab=True（导航栏）里面的分类下的商品数据
     queryset = GoodsCategory.objects.filter(is_tab=True, name__in=["生鲜食品", "酒水饮料"])
+    print('>>>>',queryset)
     serializer_class = IndexCategorySerializer

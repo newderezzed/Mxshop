@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import Goods, GoodsCategory, GoodsImage, Banner, GoodsCategoryBrand, IndexAd
 from django.db.models import Q
+
 '''
 class GoodsSerializer(serializers.Serializer):
     name = serializers.CharField(required=True, max_length=100)
@@ -41,29 +42,22 @@ class CategorySerializer(serializers.ModelSerializer):
         model = GoodsCategory
         fields = "__all__"
 
-#
-# class GoodsSerializer(serializers.ModelSerializer):
-#     '''商品'''
-#     category = CategorySerializer()
-#
-#     class Meta:
-#         model = Goods
-#         fields = '__all__'
 
-
-#轮播图
+# 轮播图
 class GoodsImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = GoodsImage
         fields = ("image",)
 
-#商品列表页
+
+# 商品列表页
 class GoodsSerializer(serializers.ModelSerializer):
     '''商品'''
-    #覆盖外键字段
+    # 覆盖外键字段
     category = CategorySerializer()
-    #images是数据库中设置的related_name="images"，把轮播图嵌套进来
+    # images是数据库中设置的related_name="images"，把轮播图嵌套进来
     images = GoodsImageSerializer(many=True)
+
     class Meta:
         model = Goods
         fields = '__all__'
@@ -73,20 +67,24 @@ class BannerSerializer(serializers.ModelSerializer):
     '''
     轮播图
     '''
+
     class Meta:
         model = Banner
         fields = "__all__"
+
 
 class BrandSerializer(serializers.ModelSerializer):
     '''
     大类下面的宣传商标
     '''
+
     class Meta:
         model = GoodsCategoryBrand
         fields = "__all__"
 
+
 class IndexCategorySerializer(serializers.ModelSerializer):
-    #某个大类的商标，可以有多个商标，一对多的关系
+    # 某个大类的商标，可以有多个商标，一对多的关系
     brands = BrandSerializer(many=True)
     # good有一个外键category，但这个外键指向的是三级类，直接反向通过外键category（三级类），取某个大类下面的商品是取不出来的
     goods = serializers.SerializerMethodField()
@@ -100,14 +98,14 @@ class IndexCategorySerializer(serializers.ModelSerializer):
         goods_json = {}
         ad_goods = IndexAd.objects.filter(category_id=obj.id, )
         if ad_goods:
-            #取到这个商品Queryset[0]
+            # 取到这个商品Queryset[0]
             good_ins = ad_goods[0].goods
-            #在serializer里面调用serializer的话，就要添加一个参数context（上下文request）,嵌套serializer必须加
+            # 在serializer里面调用serializer的话，就要添加一个参数context（上下文request）,嵌套serializer必须加
             # serializer返回的时候一定要加 “.data” ，这样才是json数据
             goods_json = GoodsSerializer(good_ins, many=False, context={'request': self.context['request']}).data
         return goods_json
 
-    #自定义获取方法
+    # 自定义获取方法
     def get_goods(self, obj):
         # 将这个商品相关父类子类等都可以进行匹配
         all_goods = Goods.objects.filter(Q(category_id=obj.id) | Q(category__parent_category_id=obj.id) | Q(
