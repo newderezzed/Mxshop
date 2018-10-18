@@ -114,3 +114,8 @@ script/
 
 #static
 allstatic/
+
+
+
+#django idea
+.idea/
