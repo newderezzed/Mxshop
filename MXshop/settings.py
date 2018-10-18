@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'li24*n(5$&xbk4bj82n=zdcwy2*e1rt48l*ogl9$88-i1b@kix'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -91,9 +91,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': '144.34.128.177',
-        'USER': 'dev',
+        'USER': 'root',
         'PASSWORD': 'cqy110',
-        'NAME': 'mxshop',
+        'NAME': 'mxdb',
         'OPTIONS': {'charset': 'utf8',
                     "init_command": "SET default_storage_engine=INNODB;"},
     },
