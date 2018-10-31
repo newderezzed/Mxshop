@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7cd429-ce9b-414a-ac62-a1a9b09b382c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MXshop/settings/pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings/pro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MXshop/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings/base.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MXshop$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1538209146257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
+    <SUITE FILE_PATH="coverage/Mxshop$base.coverage" NAME="base Coverage Results" MODIFIED="1540995993856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MXshop/settings" />
     <SUITE FILE_PATH="coverage/MXshop$yunpian.coverage" NAME="yunpian Coverage Results" MODIFIED="1538126096368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/MXshop$import_category_data.coverage" NAME="import_category_data Coverage Results" MODIFIED="1538209137048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
   </component>
@@ -29,7 +31,18 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="mxshop_local@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mxshop_local@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mxshop_local@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mxshop_local: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -119,12 +132,12 @@
     <session id="-133799540">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -132,8 +145,8 @@
           <entry key="django_session" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="log" value="24" />
-          <entry key="py" value="41" />
-          <entry key="sql" value="1" />
+          <entry key="py" value="55" />
+          <entry key="sql" value="2" />
           <entry key="trade_shoppingcart" value="1" />
           <entry key="txt" value="1" />
         </counts>
@@ -143,22 +156,22 @@
           <entry key="Database Element" value="2" />
           <entry key="Log" value="24" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="41" />
-          <entry key="Scratch" value="1" />
+          <entry key="Python" value="55" />
+          <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
           <entry key="gitignore" value="1" />
-          <entry key="py" value="405" />
-          <entry key="txt" value="14" />
+          <entry key="py" value="421" />
+          <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="25" />
-          <entry key="Python" value="405" />
+          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="Python" value="421" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -166,17 +179,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MXshop/settings/pro.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -247,11 +250,11 @@
         <option value="$PROJECT_DIR$/MXshop/settings/dev.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/MXshop/__init__.py" />
-        <option value="$PROJECT_DIR$/MXshop/settings/__init__.py" />
-        <option value="$PROJECT_DIR$/MXshop/settings/base.py" />
         <option value="$PROJECT_DIR$/logs/all.log" />
         <option value="$PROJECT_DIR$/logs/request.log" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/MXshop/settings/__init__.py" />
+        <option value="$PROJECT_DIR$/MXshop/settings/base.py" />
         <option value="$PROJECT_DIR$/MXshop/settings/pro.py" />
       </list>
     </option>
@@ -281,6 +284,17 @@
             <path>
               <item name="Mxshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mxshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mxshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mxshop" type="462c0819:PsiDirectoryNode" />
+              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mxshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mxshop" type="462c0819:PsiDirectoryNode" />
+              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -324,6 +338,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Django server.MXshop">
+    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MXshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MXshop/settings" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MXshop/settings/base.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="import_category_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MXshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -419,9 +455,11 @@
       <item itemvalue="Python.import_category_data" />
       <item itemvalue="Python.import_goods_data" />
       <item itemvalue="Python.yunpian" />
+      <item itemvalue="Python.base" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base" />
         <item itemvalue="Python.import_goods_data" />
         <item itemvalue="Python.import_category_data" />
         <item itemvalue="Python.yunpian" />
@@ -452,14 +490,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12935656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6872247" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37444934" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.72687227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,13 +508,13 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.8237885" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32892805" />
-      <window_info anchor="bottom" id="Python Console" order="14" weight="0.32946634" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.41409692" />
       <window_info anchor="bottom" id="File Transfer" order="15" weight="0.26798144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.14209116" />
+      <window_info anchor="right" id="Database" order="4" weight="0.288874" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,22 +524,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/workspaces/fruit/lib/python3.6/site-packages/rest_framework/permissions.py" />
-    <entry file="file://$PROJECT_DIR$/apps/utils/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a6430da3-2274-4624-b2b4-53e6ddd662d3/schema/main/table/users_userprofile" />
-    <entry file="file://$PROJECT_DIR$/apps/user_operation/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://a6430da3-2274-4624-b2b4-53e6ddd662d3/schema/main/table/goods_goods" />
     <entry file="das://a6430da3-2274-4624-b2b4-53e6ddd662d3/schema/main/table/trade_shoppingcart" />
     <entry file="file://$USER_HOME$/workspaces/fruit/lib/python3.6/site-packages/rest_framework/viewsets.py" />
@@ -605,13 +626,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="das://da25dc78-591f-4fad-aeae-e82c935c1d6c/schema/mxdb/table/trade_shoppingcart" />
-    <entry file="das://da25dc78-591f-4fad-aeae-e82c935c1d6c/schema/mxdb/table/django_session">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://da25dc78-591f-4fad-aeae-e82c935c1d6c/schema/mxdb/table/django_session" />
     <entry file="file://$PROJECT_DIR$/apps/goods/view_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-143" />
@@ -683,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MXshop/settings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/error.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
@@ -703,27 +711,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/logs/all.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://C:/Envs/fruit/Lib/site-packages/django/apps/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5f16e4d8-b567-41fa-b896-e1f03fd3ce1d/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/Envs/fruit/Lib/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Envs/fruit/Lib/site-packages/django/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MXshop/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MXshop/settings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MXshop/settings/pro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MXshop/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1873">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/all.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MXshop/settings/pro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        <state relative-caret-position="216">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
