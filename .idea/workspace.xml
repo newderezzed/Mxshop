@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bd7cd429-ce9b-414a-ac62-a1a9b09b382c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MXshop/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MXshop/settings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MXshop/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MXshop/settings/dev.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MXshop/settings/pro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/importexport.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/importexport.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,12 +136,13 @@
     <session id="-133799540">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -145,7 +150,7 @@
           <entry key="django_session" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="log" value="24" />
-          <entry key="py" value="55" />
+          <entry key="py" value="59" />
           <entry key="sql" value="2" />
           <entry key="trade_shoppingcart" value="1" />
           <entry key="txt" value="1" />
@@ -156,22 +161,22 @@
           <entry key="Database Element" value="2" />
           <entry key="Log" value="24" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="55" />
+          <entry key="Python" value="59" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="10" />
+          <entry key="dummy" value="18" />
           <entry key="gitignore" value="1" />
-          <entry key="py" value="421" />
+          <entry key="py" value="450" />
           <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="39" />
-          <entry key="Python" value="421" />
+          <entry key="PLAIN_TEXT" value="47" />
+          <entry key="Python" value="450" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -179,7 +184,17 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MXshop/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="239" column="31" selection-start-line="239" selection-start-column="31" selection-end-line="239" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -245,7 +260,6 @@
         <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
         <option value="$PROJECT_DIR$/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/MXshop/settings.py" />
         <option value="$PROJECT_DIR$/MXshop/settings/settings.py" />
         <option value="$PROJECT_DIR$/MXshop/settings/dev.py" />
         <option value="$PROJECT_DIR$/manage.py" />
@@ -254,8 +268,9 @@
         <option value="$PROJECT_DIR$/logs/request.log" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/MXshop/settings/__init__.py" />
-        <option value="$PROJECT_DIR$/MXshop/settings/base.py" />
         <option value="$PROJECT_DIR$/MXshop/settings/pro.py" />
+        <option value="$PROJECT_DIR$/MXshop/settings/base.py" />
+        <option value="$PROJECT_DIR$/MXshop/settings.py" />
       </list>
     </option>
   </component>
@@ -265,7 +280,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="5" />
     <option name="width" value="1750" />
@@ -290,12 +305,6 @@
               <item name="Mxshop" type="462c0819:PsiDirectoryNode" />
               <item name="MXshop" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Mxshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mxshop" type="462c0819:PsiDirectoryNode" />
-              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -312,17 +321,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\derezzed\Desktop\all about work\Mxshop\MXshop\settings" />
-      <recent name="$PROJECT_DIR$/db_tools" />
-      <recent name="$PROJECT_DIR$/db_tools/data" />
-      <recent name="$PROJECT_DIR$/extra_apps" />
-      <recent name="$PROJECT_DIR$/apps" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/extra_apps" />
       <recent name="$USER_HOME$/workspaces/fruit/lib/python3.6/site-packages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\derezzed\Desktop\all about work\Mxshop\MXshop" />
+      <recent name="C:\Users\derezzed\Desktop\all about work\Mxshop\MXshop\settings" />
+      <recent name="$PROJECT_DIR$/db_tools" />
+      <recent name="$PROJECT_DIR$/db_tools/data" />
+      <recent name="$PROJECT_DIR$/extra_apps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -351,7 +360,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MXshop/settings/base.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\derezzed\Desktop\all about work\Mxshop\MXshop\settings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -490,13 +499,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13337801" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6872247" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.72687227" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.94566816" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,9 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,15 +761,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MXshop/settings/pro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MXshop/settings/base.py">
+    <entry file="file://$PROJECT_DIR$/MXshop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="559">
+          <caret line="239" column="31" selection-start-line="239" selection-start-column="31" selection-end-line="239" selection-end-column="31" />
         </state>
       </provider>
     </entry>
