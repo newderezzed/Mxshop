@@ -24,7 +24,7 @@ SECRET_KEY = 'li24*n(5$&xbk4bj82n=zdcwy2*e1rt48l*ogl9$88-i1b@kix'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', ]
 
 # Application definition
 
@@ -84,19 +84,11 @@ WSGI_APPLICATION = 'MXshop.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # },
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': '144.34.128.177',
-        'USER': 'root',
-        'PASSWORD': 'cqy110',
-        'NAME': 'mxdb',
-        'OPTIONS': {'charset': 'utf8',
-                    "init_command": "SET default_storage_engine=INNODB;"},
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
+
 }
 
 AUTHENTICATION_BACKENDS = (
@@ -145,29 +137,29 @@ STATIC_URL = '/static/'
 import sys
 
 sys.path.insert(0, BASE_DIR)
-sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
-sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, '../../apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, '../../extra_apps'))
 
 # 重载系统的用户，让UserProfile生效
 AUTH_USER_MODEL = 'users.UserProfile'
 
 # 设置上传文件的路径
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "../../media")
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ),
-    #限速设置
+    # 限速设置
     'DEFAULT_THROTTLE_CLASSES': (
-            'rest_framework.throttling.AnonRateThrottle',   #未登陆用户
-            'rest_framework.throttling.UserRateThrottle'    #登陆用户
+        'rest_framework.throttling.AnonRateThrottle',  # 未登陆用户
+        'rest_framework.throttling.UserRateThrottle'  # 登陆用户
     ),
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '5/minute',         #每分钟可以请求两次
-        'user': '9/minute'          #每分钟可以请求五次
+        'anon': '5/minute',  # 每分钟可以请求两次
+        'user': '9/minute'  # 每分钟可以请求五次
     }
 }
 
@@ -188,12 +180,10 @@ REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
 # 云片网APIKEY
 APIKEY = "9d74815833f3fdf2575bf6b113429b8a"
 
-
-
-#缓存配置
+# 缓存配置
 REST_FRAMEWORK_EXTENSIONS = {
-    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60*5   #5s过期，时间自己可以随便设定
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 5  # 5s过期，时间自己可以随便设定
 }
 
-
 STATIC_ROOT = 'allstatic'
+
