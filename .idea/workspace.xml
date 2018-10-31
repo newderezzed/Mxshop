@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7cd429-ce9b-414a-ac62-a1a9b09b382c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MXshop/settings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MXshop/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MXshop/settings/dev.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MXshop/settings/pro.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/importexport.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/importexport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MXshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Mxshop$settings.coverage" NAME="settings Coverage Results" MODIFIED="1540998867181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MXshop" />
     <SUITE FILE_PATH="coverage/MXshop$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1538209146257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
     <SUITE FILE_PATH="coverage/Mxshop$base.coverage" NAME="base Coverage Results" MODIFIED="1540995993856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MXshop/settings" />
     <SUITE FILE_PATH="coverage/MXshop$yunpian.coverage" NAME="yunpian Coverage Results" MODIFIED="1538126096368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
@@ -169,14 +165,14 @@
         <counts>
           <entry key="dummy" value="18" />
           <entry key="gitignore" value="1" />
-          <entry key="py" value="450" />
+          <entry key="py" value="458" />
           <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="47" />
-          <entry key="Python" value="450" />
+          <entry key="Python" value="458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -188,8 +184,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MXshop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="239" column="31" selection-start-line="239" selection-start-column="31" selection-end-line="239" selection-end-column="31" />
+            <state relative-caret-position="402">
+              <caret line="149" column="43" lean-forward="true" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -280,7 +276,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="5" />
     <option name="width" value="1750" />
@@ -299,11 +295,6 @@
             <path>
               <item name="Mxshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mxshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mxshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mxshop" type="462c0819:PsiDirectoryNode" />
-              <item name="MXshop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.MXshop">
+  <component name="RunManager" selected="Python.settings">
     <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MXshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -413,6 +404,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MXshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MXshop" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MXshop/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="yunpian" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MXshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -465,9 +478,11 @@
       <item itemvalue="Python.import_goods_data" />
       <item itemvalue="Python.yunpian" />
       <item itemvalue="Python.base" />
+      <item itemvalue="Python.settings" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.settings" />
         <item itemvalue="Python.base" />
         <item itemvalue="Python.import_goods_data" />
         <item itemvalue="Python.import_category_data" />
@@ -506,7 +521,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6872247" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.94566816" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.67107195" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -768,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MXshop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="239" column="31" selection-start-line="239" selection-start-column="31" selection-end-line="239" selection-end-column="31" />
+        <state relative-caret-position="402">
+          <caret line="149" column="43" lean-forward="true" selection-start-line="149" selection-start-column="43" selection-end-line="149" selection-end-column="43" />
         </state>
       </provider>
     </entry>
