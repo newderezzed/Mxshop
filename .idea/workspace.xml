@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7cd429-ce9b-414a-ac62-a1a9b09b382c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MXshop/settings/dev.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MXshop/settings/pro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4100d28b-d772-4705-a9f0-ee0cbcb6882e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6430da3-2274-4624-b2b4-53e6ddd662d3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MXshop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MXshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/importexport.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/importexport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MXshop/settings/pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/MXshop/settings/pro.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,8 +130,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="django_session" value="1" />
-          <entry key="log" value="23" />
-          <entry key="py" value="37" />
+          <entry key="gitignore" value="1" />
+          <entry key="log" value="24" />
+          <entry key="py" value="41" />
           <entry key="sql" value="1" />
           <entry key="trade_shoppingcart" value="1" />
           <entry key="txt" value="1" />
@@ -148,23 +141,24 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="2" />
-          <entry key="Log" value="23" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="37" />
+          <entry key="Log" value="24" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="41" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="387" />
+          <entry key="gitignore" value="1" />
+          <entry key="py" value="405" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="387" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Python" value="405" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -172,7 +166,17 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MXshop/settings/pro.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -188,6 +192,8 @@
       <find>sub_cat</find>
       <find>AUT</find>
       <find>BACKENDS</find>
+      <find>log</find>
+      <find>logs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apps/users/xadmin.py" />
         <option value="$PROJECT_DIR$/apps/users/__init__.py" />
         <option value="$PROJECT_DIR$/apps/goods/xadmin.py" />
         <option value="$PROJECT_DIR$/apps/goods/models.py" />
@@ -246,6 +251,7 @@
         <option value="$PROJECT_DIR$/MXshop/settings/base.py" />
         <option value="$PROJECT_DIR$/logs/all.log" />
         <option value="$PROJECT_DIR$/logs/request.log" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/MXshop/settings/pro.py" />
       </list>
     </option>
@@ -256,7 +262,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="5" />
     <option name="width" value="1750" />
@@ -445,9 +451,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1300268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12935656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -480,7 +487,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://a6430da3-2274-4624-b2b4-53e6ddd662d3/schema/main/table/user_operation_userfav" />
     <entry file="file://$USER_HOME$/workspaces/fruit/lib/python3.6/site-packages/rest_framework/permissions.py" />
     <entry file="file://$PROJECT_DIR$/apps/utils/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -660,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MXshop/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" lean-forward="true" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MXshop/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -697,20 +696,34 @@
     <entry file="file://$PROJECT_DIR$/logs/request.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/all.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MXshop/settings/pro.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        <state relative-caret-position="239">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MXshop/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MXshop/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
+        <state relative-caret-position="1873">
           <caret line="189" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/all.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MXshop/settings/pro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
         </state>
       </provider>
     </entry>
